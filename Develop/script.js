@@ -11,7 +11,7 @@ alert("Welcome to the Password Generator. Where password security is our #1 prio
 
 function generatePassword() {
   
-
+  
   length = parseInt (prompt("How many characters would you your password to be? It can be NO LESS than 8 and NO MORE then 128."));
   //value asked for
   if (!length) {
@@ -32,49 +32,49 @@ if (!upperCase && !lowerCase && !numbers && !symbols){
 }
 //When all of 4 variables are selected
 else if ( upperCase && lowerCase && numbers && symbols){
-  choices = upperCase.concat(lowerCase, numbers, symbols);
+  let choices = upperCase + lowerCase + numbers+ symbols;
 }
 //When all of 3 variables are selected
 else if (upperCase && lowerCase && numbers){
-  choices = upperCase.concat(lowerCase, numbers);
+  let choices = upperCase + lowerCase + numbers;
 }
 else if (upperCase && lowerCase && symbols){
-  choices = upperCase.concat(lowerCase, symbols);
+  let choices = upperCase + lowerCase + symbols;
 }
 else if (lowerCase && numbers && symbols){
-  choices = lowerCase.concat(numbers, symbols);
+  choices = lowerCase + numbers + symbols;
 }
 //When all of 2 variables are selected
 else if (upperCase && lowerCase){
-  choices = upperCase.concat(lowerCase);
+  let choices = upperCase + lowerCase;
 }
 else if (upperCase && numbers){
-  choices = upperCase.concat(numbers);
+  let choices = upperCase + numbers;
 }
 else if (upperCase && symbols){
-  choices = upperCase.concat(symbols);
+  let choices = upperCase + symbols;
 }
 else if (lowerCase && numbers){
-  choices = lowerCase.concat(numbers);
+ let choices = lowerCase + numbers;
 }
 else if (lowerCase && symbols){
-  choices = lowerCase.concat(symbols);
+  let choices = lowerCase + symbols;
 }
 else if (numbers && symbols){
-  choices = numbers.concat(symbols);
+  let choices = numbers + symbols;
 }
 //when 1 variable is selcted
 else if (upperCase){
-  choices = (upperCase);
+  let choices = upperCase;
 }
 else if (lowerCase){
-  choices = (lowerCase);
+  let choices = lowerCase;
 }
 else if (numbers){
-  choices = (numbers);
+  let choices = numbers;
 }
 else if (symbols){
-  choices = (symbols);
+  let choices = symbols;
 }
 
 
@@ -90,10 +90,10 @@ function writePassword() {
 
 }
 //randomization 
-for (var i = 0; i < choices; i++){
-  var selectChoices = choices [Math.floor(Math.random() * choices.length)];
-  password.push(selectChoices);
-}
+  for (var i = 0; i < choices; i++){
+  var writePassword = choices [Math.floor(Math.random() * choices.length)];
+  password.push(writePassword);
+  }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
