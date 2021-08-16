@@ -1,7 +1,7 @@
 # Password Generator Starter Code
 Welcome to the Password Generator! Where you're problems are solved for password security. I was given the task to have the password generator be aceesible and functional. The intent is to have the generator display random numbers, letters, and symbols with a length no less than 8 and no greater than 128. 
 
-##SnapShots
+## SnapShots
 ![Screenshot (30)](https://user-images.githubusercontent.com/86333093/129500127-7a86e751-d734-46e0-a9c3-807aebae80a0.png)
 ![Screenshot (31)](https://user-images.githubusercontent.com/86333093/129500207-6f44dbfd-3435-42c2-8919-a26072f8e305.png)
 ![Screenshot (32)](https://user-images.githubusercontent.com/86333093/129500227-f3e8e6a0-16e7-4ad3-b189-8321b753e85d.png)
